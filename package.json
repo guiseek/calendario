@@ -1,0 +1,21 @@
+{
+  "name": "calendario",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node esbuild.config.js",
+    "start": "node esbuild.config.js -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.13.15",
+    "esbuild-serve": "^1.0.1",
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.2"
+  },
+  "type": "module"
+}

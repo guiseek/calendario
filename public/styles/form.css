@@ -1,0 +1,38 @@
+fieldset {
+  border: 1px dashed var(--divider-color);
+  border-radius: var(--border-radius-md);
+}
+
+form section output {
+  visibility: hidden;
+}
+
+form.invalid input:invalid,
+form section input:invalid:focus + output {
+  visibility: visible;
+}
+
+form section output {
+  color: var(--warn-color);
+}
+
+form section {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--default-element-margin);
+  margin-bottom: var(--default-element-margin);
+}
+
+form button[type="submit"] {
+  margin-top: var(--default-element-margin);
+}
+
+input {
+  border-radius: var(--border-radius-sm);
+  padding: var(--default-element-padding);
+  border: var(--default-border-width) solid var(--dark-primary-color);
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+}

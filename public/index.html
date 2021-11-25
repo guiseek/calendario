@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/button.css" />
+  <link rel="stylesheet" href="styles/dialog.css" />
+  <link rel="stylesheet" href="styles/form.css" />
+  <script src="main.js" defer></script>
+  <title>Calendário de tarefas</title>
+</head>
+
+<body>
+  <header>
+    <h1>Calendário de tarefas</h1>
+  </header>
+  <main>
+    <section>
+
+      <boot-calendar></boot-calendar>
+
+    </section>
+    <aside>
+      
+      <fieldset>
+        <legend> Tarefa </legend>
+
+        <form>
+          <section>
+            <label for="subject">Assunto</label>
+            <input id="subject" type="text" autofocus name="subject" required />
+            <output>Obrigatório</output>
+          </section>
+          <section>
+            <label for="person">Designado</label>
+            <input id="person" type="person" name="person" autocomplete="given-name" required />
+            <output>Obrigatório</output>
+          </section>
+          <section>
+            <label for="date">Data</label>
+            <input id="date" type="date" name="date" required />
+            <output>Obrigatório</output>
+          </section>
+          <section>
+            <label> <input type="checkbox" name="terms" /> Li e concordo com os termos </label>
+          </section>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </fieldset>
+
+    </aside>
+
+  </main>
+  <footer>&copy; 2021</footer>
+
+  <dialog open>
+    <header>
+      <h2>Missão</h2>
+      <button onclick="document.querySelector('dialog').close()">x</button>
+    </header>
+    <section>
+      <p>
+        Sua missão é coletar os dados do formulário e salva-los onde achar mais conveniente.
+        E então apresentar uma lista de tarefas abaixo do calendário, que conterá as tarefas relacionadas ao dia selecionado.
+      </p>
+      <p>
+        O componente de calendário está isolado para não te confundir nesse momento, porém, após missão cumprida, podemos nos aprofundar.
+      </p>
+  
+      <h3>Você precisará</h3>
+      <ul>
+        <li>Conceito de vetores para guardar e recuperar a lista de tarefas do dia</li>
+        <li>LocalStorage para guardar e ler os itens do dia</li>
+        <li>Condicionais JavaScript para definir os dados a apresentar relativo ao dia clicado</li>
+        <li>Manipulação do DOM para apresentar os dados definidos</li>
+      </ul>
+   
+
+      <h3>Dicas</h3>
+      <p>Você precisará trabalhar apenas com os arquivos</p>
+      <ul>
+        <li>
+          <code>src/main.ts</code>
+        </li>
+        <li>
+          <code>public/index.html</code>
+        </li>
+        <li>
+          <code>public/styles/*</code>
+        </li>
+      </ul>
+
+      <h3>Exemplo para referência</h3>
+      <a href="https://simpl.info/localstorage/">Simpl Info - LocalStorage</a>
+    </section>
+  </dialog>
+</body>
+
+</html>

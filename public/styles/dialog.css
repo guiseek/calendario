@@ -1,0 +1,22 @@
+dialog {
+  position: fixed;
+  top: 50%;
+  padding: 0;
+  transform: translateY(-50%);
+  width: 600px;
+  max-width: 600px;
+}
+
+dialog > section {
+  margin: var(--default-block-margin);
+}
+
+dialog button:hover {
+  cursor: pointer;
+}
+
+dialog header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

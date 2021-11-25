@@ -1,0 +1,14 @@
+button {
+  padding: var(--default-element-padding)
+    calc(var(--default-element-padding) * 2);
+  background-color: var(--default-primary-color);
+  border-radius: var(--border-radius-sm);
+  color: var(--text-primary-color);
+  border: 0;
+}
+button:disabled {
+  background-color: var(--light-primary-color);
+}
+button.accent {
+  background-color: var(--accent-color);
+}
